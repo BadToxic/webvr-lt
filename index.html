@@ -13,7 +13,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -37,6 +37,9 @@
 					<p>
 						<small>Erstellt von <a href="http://badtoxic.de/wordpress/about" target="_blank">Michael Grönert (BadToxic)</a></small>
 					</p>
+					<p>
+						<small>Diese Folien: <a href="http://badtoxic.de/webvr/lt" target="_blank">badtoxic.de/webvr/lt</a></small>
+					</p>
 				</section>
 			
 				<section>
@@ -48,9 +51,6 @@
 						<li class="fragment">Wie kann man VR entwickeln?</li>
 						<li class="fragment">Beispiel WebVR</li>
 					</ul>
-					<p class="fragment">
-						<small>Diese Folien: <a href="http://badtoxic.de/webvr/lt" target="_blank">badtoxic.de/webvr/lt</a></small>
-					</p>
 				</section>
 				
 				<section>
@@ -288,7 +288,8 @@ textureLoader.load('img/toxicon_logo.png', function (toxiconLogoTexture) {
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
-
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+				
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
